@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <div>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" />
+      </div>
+      <div>
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" id="idade" />
+      </div>
+      <div>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" />
+      </div>
+      <div>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <fieldset style="display: inline;">
+          <legend>Sexo</legend>
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sexo" id="masculino" />
+          <label for="feminino">Feminino</label>
+          <input type="radio" name="sexo" id="feminino" />
+        </fieldset>
+      </div>
+      <div>
+        <fieldset style="display: inline;">
+            <legend>De onde nos conhece?</legend>
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" name="conhecimento" id="facebook"> 
+            <label for="facebook">Instagram</label>
+            <input type="checkbox" name="conhecimento" id="instagram">
+             <label for="facebook">Whatsapp</label>
+            <input type="checkbox" name="conhecimento" id="whatsapp">
+        </fieldset>
+      </div>
+      <div>
+        <input type="button" value="Pesquisar" onclick="alert('pesquisando...')">
+      </div>
+      <div>
+        <label for="observacao">Observação: </label>
+        <textarea name="observacao" id="observacao"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        /*
+        Solicite ao usuario:
+        1- um número
+        2 - uma operação (+,-,/,*)
+        3 - um outro número
+
+        execute a operação entre os dois números a partir do que o usuário digitou e imprima o resultado
+        ex:
+        numero1 = 2
+        operacao = "+"
+        numero2 = 3
+        resultado = 5
+        */
+
+        let numero1 = Number(prompt("Digite o primeiro número"))
+        let operacao = (prompt("Digite o operador(+,-,/,*)"))
+        let numero2 = Number(prompt("Digite o segundo número"))
+        let resultado = ""
+        switch(operacao){
+            case "+":
+                resultado = numero1+numero2
+                document.write(resultado)
+                break;
+
+            case "-":
+                resultado = numero1-numero2
+                document.write(resultado)
+                break;
+
+            case "/":
+                resultado = numero1/numero2
+                document.write(resultado)
+                break;
+                
+            case "*":
+                resultado = numero1*numero2
+                document.write(resultado)
+                break;
+            default:
+            document.write("Operador inválido!")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

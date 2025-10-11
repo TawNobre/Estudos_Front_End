@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <script>
+        /*
+        Solicite ao usuario para que ele digite uma nota
+
+        imprima as mensagens:
+        caso maior que 9 imprima: "Nota A"
+        caso maior que 8 imprima: "Nota B" 
+        caso maior que 7 imprima: "Nota C" 
+        caso maior ou igual a 6 imprima: "Nota D" 
+        caso menor que 6 imprima: "Nota E"
+        qualquer outro valor: "Nota Inválida" 
+
+        */
+
+        let nota = Number(prompt("Digite a sua nota:"));
+        if(nota>10 || nota<0){
+            document.write("Nota inválida!")
+            document.write("<br>")
+        }else if(nota>9){
+            document.write("Nota A")
+            document.write("<br>")
+        }else if(nota>8){
+            document.write("Nota B")
+            document.write("<br>")
+        }else if(nota>7){
+            document.write("Nota C")
+            document.write("<br>")
+        }else if(nota>=6){
+            document.write("Nota D")
+            document.write("<br>")
+        }else if(nota<6){
+            document.write("Nota E")
+            document.write("<br>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <script>
+        /*
+        Solicite 2 informações ao usuário:
+        nome:
+        idade:
+
+        imprima usando o document.write a seguinte mensagem:
+        
+        "Nome digitado" você nasceu em "o ano de nascimento" 
+        */
+
+        let nome = prompt("Digite o seu nome: ");
+        let idade = Number(prompt("Digite a sua idade: "));
+
+        let anoNascimento = new Date().getFullYear() - idade;
+
+        document.write(nome, ", você nasceu em ", anoNascimento)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
