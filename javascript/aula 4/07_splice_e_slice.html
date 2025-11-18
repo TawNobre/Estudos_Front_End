@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice e Slice</title>
+    <script>
+        
+        let nomes = ["Rafael", "João", "Luis"];
+        //(apontar indice inicial, quantidade de itens a retirar, itens a adicionar)
+        nomes.splice(3,0, "Paschoal");
+        document.write(nomes, "<br>");
+        //["Rafael", "João", "Luis", "Paschoal"];
+        
+        //Reverse altera a ordem do array
+        nomes.reverse();
+        document.write(nomes, "<br>");
+
+        //Slice preserva o array original
+        let nomesSlice = nomes.slice(0,2);
+        document.write(nomesSlice, "<br>");
+
+        //Retorna uma string separada por um caractere específico
+        let stringNomes = nomes.join("|")
+        document.write(stringNomes, "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

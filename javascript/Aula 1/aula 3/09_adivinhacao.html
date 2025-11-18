@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        Crie um código que peça ao usuário para adivinhar um número
+        entre 0 e 9, repetindo o pedido até que o usuário acerte. Defina
+        o número a ser adivinhado diretamente no código.
+        */
+
+        let numero_adivinhacao = parseInt(Math.random()*10)
+
+        while(true){
+            let palpite = Number(prompt("Escolha um número entre 0 e 9"))
+            if(palpite===numero_adivinhacao){
+                document.write("Você acertou o número!")
+                break
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

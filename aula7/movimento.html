@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimento</title>
+    <style>
+        @keyframes mover_diagonal{
+            0%{transform: translate(0px, 0px);}
+            100%{transform: translate(500px, 240px);}
+        }
+        .div_movimento{
+            animation: mover_diagonal 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <!---
+    Crie uma animação que atue sobre uma img de sua escolha
+    A animação deve fazer a imagem andar na diagonal saindo do canto superior esquerdo e indo para o canto inferior direito:
+    transformx e transformy
+    --->
+    <div class="div_movimento">
+        <img src="/Front/aula7/png-clipart-lightning-mcqueen-mater-sally-carrera-doc-hudson-cars-disney-cars-disney-cars-lightning-mcqueen-car-performance-car-thumbnail.png" height="50px" alt="">
+    </div>
+</body>
+</html>

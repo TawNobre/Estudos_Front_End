@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'cabecalho cabecalho cabecalho'
+            'lateral conteudo conteudo';
+            gap: 10px;
+        }
+        .cabecalho{
+            grid-area: cabecalho;
+            background-color: lightcyan;
+        }
+        .lateral{
+            grid-area: lateral;
+            background-color: lightpink;
+        }
+        .conteudo{
+            grid-area: conteudo;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">Cabeçalho</div>
+        <div class="lateral">Lateral</div>
+        <div class="conteudo">conteudo</div>
+    </div>
+</body>
+</html>

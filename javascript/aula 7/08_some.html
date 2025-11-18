@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some, every, find</title>
+    <script>
+        let numeros = [5,7,9, 12];
+
+        let contemPar = numeros.some((item)=>{
+            return item%2==0;
+        })
+
+        let todosPares = numeros.every((item)=>{
+            return item%2==0;
+        })
+        
+        let primeiroPar = numeros.find((item)=>{
+            return item%2==0;
+        })
+
+        document.write("Some = ", contemPar, "<br>")
+        document.write("Every = ", todosPares, "<br>")
+        document.write("Find = ", primeiroPar, "<br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

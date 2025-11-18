@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+        }
+
+        div div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Texto 1</div>
+        <div>Texto 2</div>
+        <div>Texto 3</div>
+        <div>Texto 4</div>
+    </div>
+</body>
+</html>

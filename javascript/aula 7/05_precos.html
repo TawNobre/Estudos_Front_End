@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precos</title>
+    <script>
+
+        /*
+        Utilizando um filter, crie uma nova lista com os preços maiores que 50.
+        Utilizando um map, crie uma nova lista aplicando 10% de desconto
+        na lista com itens maiores que 50
+        */
+
+        let precos = [30.2, 50.4, 70.2];
+
+        /*let maioresQue50 = precos.filter((preco)=>{
+            return preco > 50;
+        });
+
+        let precosComDesconto = maioresQue50.map((precoAcimaDe50)=>{
+            return (precoAcimaDe50 * 0.9).toFixed(2);
+        });*/
+
+        let maioresQue50ComDesconto = precos.filter((numero)=>{
+            return numero > 50;
+        }).map((item)=>{
+            return (item * 0.9).toFixed(2)});
+
+
+        document.write(maioresQue50ComDesconto);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <script>
+        /*Crie um array cores com os itens vermelho, verde, azul e amarelo
+        exiba no console o elemento na posição 3*/
+
+        /*let cores = ["Vermelho", "Verde", "Azul", "Amarelo"]
+        document.write(cores[3], "<br>")*/
+
+        /*Atividade 03
+            Crie um array chamado cores contendo as seguintes cores, Vermelho, Verde, Azul.
+
+            Adicione as cores Amarelo e Roxo ao final do array.
+            Em seguida, remova a última cor.
+            Use o método splice para remover "Verde" e adicionar "Laranja" e "Marrom" em seu lugar.
+            Crie um novo array chamado novasCores contendo as primeiras duas cores do array cores.
+            Use o método join para criar uma string com todas as cores do array cores, separadas por uma vírgula.
+            Inverta a ordem dos elementos no array cores.
+            Exiba os arrays cores e novasCores, e a string resultante no console.
+
+            let cores = ["Vermelho", "Verde", "Azul"];
+            cores.push("Amarelo", "Roxo");
+            cores.pop();
+            cores.splice(1,1, "Laranja", "Marrom");
+
+            let novasCores = cores.slice(0,2);
+
+            let coresJuntas = cores.join(",");
+
+            cores.reverse();
+
+            document.write(cores, "<br>");
+            document.write(novasCores, "<br>");
+            document.write(coresJuntas, "<br>");*/
+
+        /*    Atividade 02
+        Crie um array chamado animais contendo os seguintes elementos:
+        Cachorro, Gato, Papagaio. Em seguida:
+
+        Adicione o elemento Tartaruga ao final do array.
+        Remova o primeiro elemento e adicione o elemento Coelho no início.
+        Depois, substitua o elemento na posição 2 por Hamster.
+        Exiba o comprimento atual do array.
+        Acesse e exiba no console o elemento na posição 1.
+        Finalmente, exiba o array final no console.
+
+        Objetivo:
+        Praticar operações básicas de criação, acesso e modificação de elementos
+        em arrays.*/
+
+        let animais = ["Cachorro", "Gato", "Papagaio"];
+        animais.push("Tartaruga");
+        animais.splice(0,1,"Coelho");
+        animais.splice(2,1,"Hamster");
+
+        document.write(animais.length, "<br>");
+        document.write(animais[1], "<br>");
+        document.write(animais, "<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

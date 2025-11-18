@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nomes = []
+        while(true){
+            let nomeDigitado = prompt("Digite um nome ou 0 para sair")
+            if(nomeDigitado == 0){
+                break
+            }else{
+                if (!nomes.includes(nomeDigitado)){
+                nomes.push(nomeDigitado)
+                }
+            }
+        }
+        document.write(nomes)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
